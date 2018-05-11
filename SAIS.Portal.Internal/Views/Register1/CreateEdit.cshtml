@@ -1,0 +1,98 @@
+﻿@model SAIS.Model.Register1Model
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<input2 type="hidden" asp-for="Id" />
+<input2 type="hidden" asp-for="Company.Id" />
+<input2 type="hidden" asp-for="Person.Id" />
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <label2 asp-for="Company" class="col-md-3 text-md-right" />
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label2 asp-for="Company.Identifier" class="col-md-3 text-md-right" />
+                    <div class="col-md-8">
+                        <input2 asp-for="Company.Identifier" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label2 asp-for="Company.Name" class="col-md-3 text-md-right" />
+                    <div class="col-md-8">
+                        <input2 asp-for="Company.Name" />
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label2 asp-for="Company.Name" class="col-md-3 text-md-right" />
+                            <div class="col-md-2">
+                                <input2 asp-for="Company.Name" />
+                            </div>
+                            <div class="col-md-2">
+                                <input2 asp-for="Company.Name" />
+                            </div>
+                            <div class="col-md-2">
+                                <input2 asp-for="Company.Name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <label2 asp-for="Person" class="col-md-12" />
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label2 asp-for="Person.FirstName" class="col-md-3 text-md-right" />
+                    <div class="col-md-8">
+                        <input2 asp-for="Person.FirstName" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label2 asp-for="Person.MiddleName" class="col-md-3 text-md-right" />
+                    <div class="col-md-8">
+                        <input2 asp-for="Person.MiddleName" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label2 asp-for="Person.LastName" class="col-md-3 text-md-right" />
+                    <div class="col-md-8">
+                        <input2 asp-for="Person.LastName" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+
+    <script src="~/lib/js/knockout.js"></script>
+
+    <script src="~/js/app.knockout.js"></script>
+    <script src="~/js/knockout-select2.js"></script>
+    <script src="~/js/app.js"></script>
+
+    <script>
+        $(function () {
+            mainViewModel = new MainViewModel();
+            ko.applyBindings(mainViewModel);
+        });
+    </script>
+}

@@ -1,0 +1,141 @@
+﻿// Configure bundling and minification for the project.
+// More info at https://go.microsoft.com/fwlink/?LinkId=808241
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optionally generate .map file
+    "sourceMap": false
+  },
+
+  // ========== Bootstrap 4 ===================================================
+  {
+    "outputFileName": "wwwroot/lib/css/bootstrap.css",
+    "inputFiles": [
+      "node_modules/bootstrap/dist/css/bootstrap.css"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/lib/css/bootstrap.min.css",
+    "inputFiles": [
+      "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/lib/js/bootstrap.js",
+    "inputFiles": [
+      "node_modules/bootstrap/dist/js/bootstrap.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/lib/js/bootstrap.min.js",
+    "inputFiles": [
+      "node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  // ==========================================================================
+
+  // ========== JQuery ========================================================
+  {
+    "outputFileName": "wwwroot/lib/js/jquery.js",
+    "inputFiles": [
+      "node_modules/jquery/dist/jquery.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/lib/js/jquery.min.js",
+    "inputFiles": [
+      "node_modules/jquery/dist/jquery.min.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  // ==========================================================================
+
+  // ========== JQuery Validate ===============================================
+  {
+    "outputFileName": "wwwroot/lib/js/jquery.validate.js",
+    "inputFiles": [
+      "node_modules/jquery-validation/dist/jquery.validate.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/lib/js/jquery.validate.min.js",
+    "inputFiles": [
+      "node_modules/jquery-validation/dist/jquery.validate.min.js"
+    ],
+    "minify": { "enabled": false }
+  },
+
+  {
+    "outputFileName": "wwwroot/lib/js/jquery.validate.unobtrusive.js",
+    "inputFiles": [
+      "node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/lib/js/jquery.validate.unobtrusive.min.js",
+    "inputFiles": [
+      "node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  // ==========================================================================
+
+  // ========== Popper ========================================================
+  {
+    "outputFileName": "wwwroot/lib/js/popper.min.js",
+    "inputFiles": [
+      "node_modules/popper.js/dist/popper.min.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  // ==========================================================================
+
+  // ========== Knockoutjs ====================================================
+  {
+    "outputFileName": "wwwroot/lib/js/knockout.js",
+    "inputFiles": [
+      "node_modules/knockout/build/output/knockout-latest.debug.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/lib/js/knockout.min.js",
+    "inputFiles": [
+      "node_modules/knockout/build/output/knockout-latest.js"
+    ],
+    "minify": { "enabled": false }
+  },
+  // ==========================================================================
+
+  // ========== require-vuejs- ====================================================
+  {
+    "outputFileName": "wwwroot/lib/js/require-vuejs.js",
+    "inputFiles": [
+      "node_modules/require-vuejs/dist/require-vuejs.js"
+    ],
+    "minify": { "enabled": false }
+  }
+  // ==========================================================================
+]

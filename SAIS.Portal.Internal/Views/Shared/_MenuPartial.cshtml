@@ -1,0 +1,37 @@
+﻿<header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">SAIS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Въвеждане
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="dropdown-item">Рег. 1</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="dropdown-item">Рег. 2</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="dropdown-item">Рег. 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="dropdown-item">Рег. 4</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">Справки</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">Админ</a>
+                </li>
+                <li class="nav-item">      </li>
+
+                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">Home</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">About</a></li>
+                <li class="nav-item"><a asp-area="" asp-controller="Home" asp-action="Contact" class="nav-link">Contact</a></li>
+            </ul>
+            @await Html.PartialAsync("_LoginPartial")
+        </div>
+    </nav>
+</header>

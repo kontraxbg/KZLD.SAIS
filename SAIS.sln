@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAIS.Data", "SAIS.Data\SAIS.Data.csproj", "{9CFD5F5B-9BE5-488B-8379-CF07101A7D61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAIS.Portal.Internal", "SAIS.Portal.Internal\SAIS.Portal.Internal.csproj", "{829F1C46-6B9E-48A9-84C2-EF4E3765AB9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Info", "Info", "{5444DF80-23F5-421B-A7F0-6A706511EC8F}"
+	ProjectSection(SolutionItems) = preProject
+		Info\Info.txt = Info\Info.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAIS.Service", "SAIS.Service\SAIS.Service.csproj", "{4C62B5F3-E35A-4EEC-913B-E2B307E3911A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAIS.Model", "SAIS.Model\SAIS.Model.csproj", "{B9FA51A5-6EC9-41A9-8CE0-F583F9D568E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{3F6DB412-58FE-4F0C-A164-D4A4E92922E0}"
+	ProjectSection(SolutionItems) = preProject
+		DbInit.sql = DbInit.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAIS.Portal.Shared", "SAIS.Portal.Shared\SAIS.Portal.Shared.csproj", "{C72C67E4-A982-4945-87CA-1896419D963F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CFD5F5B-9BE5-488B-8379-CF07101A7D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFD5F5B-9BE5-488B-8379-CF07101A7D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFD5F5B-9BE5-488B-8379-CF07101A7D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFD5F5B-9BE5-488B-8379-CF07101A7D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829F1C46-6B9E-48A9-84C2-EF4E3765AB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829F1C46-6B9E-48A9-84C2-EF4E3765AB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829F1C46-6B9E-48A9-84C2-EF4E3765AB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829F1C46-6B9E-48A9-84C2-EF4E3765AB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C62B5F3-E35A-4EEC-913B-E2B307E3911A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C62B5F3-E35A-4EEC-913B-E2B307E3911A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C62B5F3-E35A-4EEC-913B-E2B307E3911A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C62B5F3-E35A-4EEC-913B-E2B307E3911A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FA51A5-6EC9-41A9-8CE0-F583F9D568E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FA51A5-6EC9-41A9-8CE0-F583F9D568E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FA51A5-6EC9-41A9-8CE0-F583F9D568E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FA51A5-6EC9-41A9-8CE0-F583F9D568E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C72C67E4-A982-4945-87CA-1896419D963F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72C67E4-A982-4945-87CA-1896419D963F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72C67E4-A982-4945-87CA-1896419D963F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72C67E4-A982-4945-87CA-1896419D963F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB4A04DA-659A-443C-B184-2A8D0833FC1E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/defaultcollection
+		SccProjectUniqueName0 = SAIS.Data\\SAIS.Data.csproj
+		SccProjectName0 = SAIS.Data
+		SccAuxPath0 = http://tfs:8080/tfs/defaultcollection
+		SccLocalPath0 = SAIS.Data
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = SAIS.Portal.Internal\\SAIS.Portal.Internal.csproj
+		SccProjectName1 = SAIS.Portal.Internal
+		SccAuxPath1 = http://tfs:8080/tfs/defaultcollection
+		SccLocalPath1 = SAIS.Portal.Internal
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = SAIS.Service\\SAIS.Service.csproj
+		SccProjectName2 = SAIS.Service
+		SccAuxPath2 = http://tfs:8080/tfs/defaultcollection
+		SccLocalPath2 = SAIS.Service
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = SAIS.Model\\SAIS.Model.csproj
+		SccProjectName3 = SAIS.Model
+		SccAuxPath3 = http://tfs:8080/tfs/defaultcollection
+		SccLocalPath3 = SAIS.Model
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal
